@@ -1,0 +1,476 @@
+@import "../assets/fonts/proxima-nova/stylesheet.css";
+.top-header {
+  padding: 10px 0;
+  background-color: #004a97;
+  transition: all 1 ease-in-out;
+}
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  padding: 1.5rem 0;
+  z-index: 2;
+}
+
+.img-menu {
+  position: absolute;
+  width: 300px;
+  top: 3rem;
+}
+
+.nav-link {
+  margin-right: 35px;
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 10px 5px;
+}
+
+.address {
+  margin-bottom: 0;
+  color: #ffffff;
+}
+.address-text, .address-strong {
+  font-size: 11px;
+}
+.address-text {
+  margin-bottom: 0.1rem;
+}
+
+.top-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  color: #ffffff;
+}
+.top-content::before {
+  content: "";
+  display: block;
+  position: relative;
+  right: 85px;
+  width: 1px;
+  height: 40px;
+  background-color: #ffff;
+}
+
+.item-links {
+  color: #ffffff;
+}
+
+@media (max-width: 1366px) and (min-width: 1300px) {
+  .address-text,
+.address-strong {
+    font-size: 9px;
+  }
+
+  .top-content::before {
+    right: 50px;
+  }
+
+  .web-mail {
+    position: relative;
+    left: 30px;
+  }
+
+  .cdmt {
+    position: relative;
+    left: 17px;
+  }
+
+  .retrict {
+    position: relative;
+    left: 10px;
+  }
+}
+.customNav {
+  background-color: #004a97 !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transition: all 0.3s ease-in-out;
+  padding: 0.5rem 0;
+}
+
+.customImg {
+  position: relative;
+  top: 0;
+  width: 8vw;
+  transition: width 0.1s ease-in-out;
+}
+
+.home-ind {
+  display: flex;
+  justify-content: space-between;
+  bottom: 45px;
+  margin-right: 6%;
+  margin-left: 6%;
+  border-top: 2px solid #fff;
+  z-index: 9;
+}
+.home-ind li {
+  width: 25%;
+  height: 5px;
+  margin-right: 0;
+  margin-left: 0;
+  text-indent: 0;
+  color: #fff;
+  background-color: transparent;
+  border-top: 0;
+}
+.home-ind li.active {
+  background-color: #ffffff;
+}
+.home-ind li p {
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+
+.carousel-caption {
+  width: 28%;
+  left: 55%;
+  bottom: 45%;
+  text-align: left;
+  z-index: 9;
+}
+.carousel-caption-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ffffff;
+}
+.carousel-caption-sub {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1366px) and (min-width: 1300px) {
+  .carousel-caption {
+    bottom: 35%;
+  }
+  .carousel-caption-title {
+    font-size: 1.5rem;
+  }
+  .carousel-caption-sub {
+    font-size: 1rem;
+  }
+}
+img {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.card {
+  padding-right: 0;
+  padding-left: 0;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.card:hover img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.btn-card-header {
+  color: #004a97;
+  border: 2px solid #004a97;
+  background-color: transparent;
+}
+.btn-card-header:hover {
+  color: #ffffff;
+  background-color: #004a97;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-right: 0;
+  padding-left: 0;
+  border: none;
+  border-bottom: 2px solid #58595b;
+  background-color: transparent;
+}
+.card-header-text {
+  color: #58595b;
+  margin-bottom: 0;
+}
+
+.proc-item {
+  overflow: hidden;
+}
+
+.proc-caption {
+  left: 5%;
+  text-align: left;
+  z-index: 99999;
+}
+
+.proc-ind li {
+  width: 15px;
+  height: 15px;
+  border: 1px solid;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.proc-ind .active {
+  background-color: #fff;
+}
+
+.proc-caption {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 7% 3%;
+  /* gradient */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+100 */
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00000000", endColorstr="#a6000000",GradientType=0 );
+  /* IE6-9 */
+}
+
+.slide-link:hover .proc-caption {
+  text-decoration: underline;
+}
+
+.section {
+  z-index: 9;
+}
+
+.news-section {
+  background-color: #eeeeee;
+}
+.news-section .title {
+  position: relative;
+  padding: 15px 0;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: #58595b;
+  border-bottom: 2px solid #58595b;
+}
+.news-section .btn-primary {
+  position: relative;
+  float: right;
+  color: #004a97;
+  background-color: transparent;
+  border: 2px solid #004a97;
+}
+.news-section .btn-primary:hover {
+  color: #ffffff;
+  background-color: #004a97;
+}
+.news-section .card {
+  position: relative;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+.news-section .card-title {
+  margin-top: 0.5rem;
+  margin-bottom: 1px;
+  color: #58595b;
+}
+.news-section .card-img-content {
+  overflow: hidden;
+}
+.news-section .card-img-top {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.news-section .card-text {
+  color: #58595b;
+  font-family: "Proxima Nova Rg";
+  font-weight: normal;
+}
+.news-section .card-time {
+  padding: 5px 0;
+  text-decoration: none;
+  color: #58595b;
+  border-bottom: 2px solid #58595b;
+}
+.news-section .card:hover .card-img-top {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.news-section .blog-link {
+  text-decoration: none;
+}
+.news-section .blog-link:hover .card-time, .news-section .blog-link:hover .card-time small {
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .news-section .mobile-space {
+    margin-top: 1.5rem;
+  }
+}
+
+.card-section .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.card-section .card-title {
+  display: block;
+  position: absolute;
+  font-size: 2em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .card-section .card-title {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+}
+.card-section .card-mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #004a97;
+  opacity: 0.4;
+  overflow: hidden;
+  transition: opacity 0.3s ease-in-out;
+}
+.card-section .card-mask:hover {
+  opacity: 0.1;
+}
+.card-section .card-img-content {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.card-section .card-link:hover .card-title {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #008065;
+}
+.footer .img-fluid {
+  max-width: 75%;
+}
+.footer .menu-list {
+  padding: 0;
+  list-style: none;
+}
+.footer .menu-title {
+  margin-bottom: 0.5rem;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 2px;
+}
+.footer .center-content {
+  display: flex;
+  align-items: center;
+}
+.footer .address {
+  font-size: 14px;
+}
+.footer .address-title {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 2px;
+}
+.footer .address-text {
+  margin-bottom: 0;
+}
+.footer .address .address-item {
+  color: #fff;
+}
+.footer .btn-primary {
+  display: block;
+  width: 100%;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 0;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+}
+.footer .btn-primary:hover {
+  color: #008065;
+  background-color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+}
+.footer .menu-footer-link {
+  font-size: 14px;
+  color: white;
+  font-weight: 300;
+  transition: all 0.2s ease-in-out;
+}
+.footer .menu-footer-link:hover {
+  text-decoration: none;
+  transform: scale(1.1);
+}
+.footer .mapa {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  height: 100%;
+  padding: 0;
+}
+
+html,
+body {
+  display: block;
+  margin: auto;
+  max-width: 2000px;
+  font-family: "Gotham", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.container {
+  max-width: 90%;
+}
+@media (max-width: 1366px) and (min-width: 1300px) {
+  .container {
+    max-width: 95%;
+  }
+}
+
+/* section default */
+.section {
+  position: relative;
+  display: block;
+  padding: 60px 0;
+}
+
+/*# sourceMappingURL=main.css.map */

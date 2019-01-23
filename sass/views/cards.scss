@@ -1,0 +1,44 @@
+.card-section {
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &-title {
+      display: block;
+      position: absolute;
+      font-size: 2em;
+      color: #ffffff;
+      text-transform: uppercase;
+  
+      @media (max-width: 768px) {
+        text-align: center;
+        font-size: 1.2rem;
+      }
+    }
+
+    &-mask {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #004a97;
+      opacity: .4;
+      overflow: hidden;
+      transition: opacity .3s ease-in-out;
+      &:hover {
+        opacity: 0.1;
+      }
+    }
+
+    &-img-content {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    &-link:hover .card-title {
+      text-decoration: underline;
+    }
+  }
+}

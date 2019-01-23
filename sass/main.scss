@@ -1,0 +1,33 @@
+@import "views/header.scss";
+// @import "views/headerInterna.scss";
+@import "views/home.scss";
+@import "views/newsItens.scss";
+@import "views/news.scss";
+@import "views/cards.scss";
+@import "views/footer.scss";
+
+@import "../assets/fonts/proxima-nova/stylesheet.css";
+
+//Default
+html,
+body {
+  display: block;
+  margin: auto;
+  max-width: 2000px;
+  font-family: 'Gotham', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+// main container
+.container {
+  max-width: 90%;
+  @media (max-width: 1366px) and (min-width: 1300px) {
+    max-width: 95%;
+  }
+}
+/* section default */
+.section {
+  position: relative;
+  display: block;
+  padding: 60px 0;
+}

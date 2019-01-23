@@ -1,0 +1,108 @@
+.top-header {
+  padding: 10px 0;
+  background-color: #004a97;
+  transition: all 1 ease-in-out;
+}
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  padding: 1.5rem 0;
+  z-index: 2;
+}
+
+.img-menu {
+  position: absolute;
+  width: 300px;
+  top: 3rem;
+}
+
+.nav-link {
+  margin-right: 35px;
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 10px 5px;
+}
+
+.address {
+  margin-bottom: 0;
+  color: #ffffff;
+  &-text,
+  &-strong {
+    font-size: 11px;
+  }
+  &-text {
+    margin-bottom: 0.1rem;
+  }
+}
+
+.top-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  color: #ffffff;
+
+  &::before {
+    content: '';
+    display: block;
+    position: relative;
+    right: 85px;
+    width: 1px;
+    height: 40px;
+    background-color: #ffff;
+  }
+}
+
+.item-links {
+  color: #ffffff;
+}
+
+// hd screen
+@media (max-width: 1366px) and (min-width: 1300px) {
+  .address-text,
+  .address-strong {
+    font-size: 9px;
+  }
+
+  .top-content::before {
+    right: 50px;
+  }
+
+  .web-mail {
+    position: relative;
+    left: 30px;
+  }
+
+  .cdmt {
+    position: relative;
+    left: 17px;
+  }
+
+  .retrict {
+    position: relative;
+    left: 10px;
+  }
+
+}
+
+.customNav {
+  background-color: #004a97 !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transition: all .3s ease-in-out;
+  padding: 0.5rem 0;
+}
+
+.customImg {
+  position: relative;
+  top: 0;
+  width: 8vw;
+  transition: width .1s ease-in-out;
+}
