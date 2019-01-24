@@ -2,7 +2,7 @@ $(document).ready(function() {
   var prevScrollpos = $(window).scrollTop();
   $(window).scroll(function (event) {
     var currentScrollPos = $(window).scrollTop();
-    if($(window).scrollTop() >= $('.top-header').height()) {
+    if($(window).scrollTop() >= $('.top-header').height()+($('.navbar').height()/2)) {
       $('.header-event').removeClass('.top-header'),
       $('.navbar').addClass('customNav'),
       $('.img-menu').addClass('customImg');
